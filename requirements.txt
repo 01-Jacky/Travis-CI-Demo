@@ -4,11 +4,14 @@ attrs==19.3.0
 black==19.10b0
 Click==7.0
 colorama==0.4.3
+coverage==5.0.1
 entrypoints==0.3
 flake8==3.7.9
 isort==4.3.21
 mccabe==0.6.1
 more-itertools==8.0.2
+mypy==0.761
+mypy-extensions==0.4.3
 packaging==19.2
 pathspec==0.6.0
 pluggy==0.13.1
@@ -21,4 +24,5 @@ regex==2019.12.20
 six==1.13.0
 toml==0.10.0
 typed-ast==1.4.0
+typing-extensions==3.7.4.1
 wcwidth==0.1.7

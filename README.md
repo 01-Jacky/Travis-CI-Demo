@@ -1,5 +1,5 @@
-# travis-ci-demo
-> Demo of how Travis-CI works
+# Travis-CI-Demo
+> Template to get a basic Travis CI running with unit test and style/static checks. 
 
 [![Build Status](https://travis-ci.com/01-Jacky/Travis-CI-Demo.svg?branch=master)](https://travis-ci.com/01-Jacky/Travis-CI-Demo)
 
@@ -18,7 +18,7 @@ coverage run --source=sample -m pytest tests && coverage report
 
 ### And coding style tests
 ```
-isort -rc sample && black sample && flake8 sample
+isort --check-only -rc sample && black --check sample && flake8 sample && mypy sample
 ```
 
 ## Using Travis-CI

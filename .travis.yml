@@ -8,6 +8,7 @@ install:
 # command to run tests
 script:
   - isort --check-only -rc sample
-  - flake8 sample
   - black --check sample
+  - flake8 sample
+  - mypy sample
   - python -m pytest tests

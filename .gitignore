@@ -2,6 +2,7 @@
 
 # Uncategorized
 .coverage
+.mypy_cache/
 
 # IDE
 .idea

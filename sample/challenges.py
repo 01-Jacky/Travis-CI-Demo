@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict, List
 
 
 def two_sum(nums: List[int], target: int) -> List[int]:
@@ -8,7 +8,7 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     You may assume that each input would have exactly one solution, and you may
     not use the same element twice.
     """
-    value_index_cache = {}
+    value_index_cache: Dict[int, int] = {}
 
     for i, num in enumerate(nums):
         search_value = target - num
