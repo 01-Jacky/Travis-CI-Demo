@@ -11,7 +11,10 @@ pip install -r requirements.txt
 ```
 
 ## Running the tests
+```
 python -m pytest tests
+coverage run --source=sample -m pytest tests && coverage report
+```
 
 ### And coding style tests
 ```

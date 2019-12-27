@@ -11,11 +11,10 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     value_index_cache = {}
 
     for i, num in enumerate(nums):
-        search_value = \
-            target - num
+        search_value = target - num
         if search_value in value_index_cache:
             return [value_index_cache[search_value], i]
         else:
-            # Assume 1 solution so overwriting is not a concern as
+            # Assume 1 solution so overwriting is not a concern
             value_index_cache[num] = i
     return []

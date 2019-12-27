@@ -7,7 +7,7 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - isort -rc sample
+  - isort --check-only -rc sample
   - flake8 sample
   - black --check sample
   - python -m pytest tests
