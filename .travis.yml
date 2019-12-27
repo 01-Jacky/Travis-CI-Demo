@@ -9,5 +9,5 @@ install:
 script:
   - isort -rc sample
   - flake8 sample
-  - black sample
+  - black --check sample
   - python -m pytest tests

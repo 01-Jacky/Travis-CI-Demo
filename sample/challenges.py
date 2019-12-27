@@ -11,7 +11,8 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     value_index_cache = {}
 
     for i, num in enumerate(nums):
-        search_value = target - num
+        search_value = \
+            target - num
         if search_value in value_index_cache:
             return [value_index_cache[search_value], i]
         else:
